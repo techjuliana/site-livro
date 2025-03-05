@@ -398,23 +398,18 @@ width: 490px;
         padding: 5px;
     }
 
-    .lancamento-img {
-        width: 360px;
-        height: 360px;
-    }
-
     .imagem-lancamento-container {
         margin-right: 0px;
     }
     
     .lancamento-img {
-        width: 360px;
-        height: 600px;
+        width: 340px;
+        /* height: 600px; */
     }
     
     .alinhamento-texto {
     /* width: 390px; */
-    width: 360px;
+    width: 340px;
     }
 }
 
@@ -470,11 +465,11 @@ width: 490px;
         margin-bottom: 0rem;
         align-items: center;
         text-align: center;
-        padding: 5px;
+        /* padding: 5px; */
     }
     .video {
         border: 5px solid #7754A6;
-        width: 360px;
+        width: 340px;
         height: 300px;
     }
 }
@@ -703,7 +698,7 @@ text-align: center;
         padding: 5px;
     }
     .imagem-autora {
-         width: 360px;
+         width: 350px;
     }
 
     .autora-frase {
@@ -715,7 +710,7 @@ text-align: center;
         margin-right: 0px;
     }
     .autora-text-container {
-        width: 360px;
+        width: 350px;
     }
    .autora-bio {
     flex-direction: column;
@@ -810,11 +805,11 @@ text-align: center;
 
     .proximo-livro-textual {
         /* width: 390px; */
-        width: 360px;
+        width: 350px;
         margin-bottom: 4rem;
     }
     .proximo-livro-capa {
-        width: 360px;
+        width: 350px;
     }
     
 }
