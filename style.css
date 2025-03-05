@@ -368,8 +368,8 @@ animation: piscar 1s infinite;
 }
 
 .lancamento-img {
-    width: 480px;
-    height: 600px;
+    width: 470px;
+    height: 560px;
 }
 
 .alinhamento-texto {
@@ -658,7 +658,7 @@ text-align: center;
 
 .imagem-autora {
     width: 390px;
-    height: 600px;
+    height: 560px;
 }
 
 .autora-text-container {
@@ -738,7 +738,7 @@ text-align: center;
 
 .proximo-livro-capa {
     width: 390px;
-    height: 600px;
+    height: 560px;
 }
 
 .frase-proximo-livro {
