@@ -250,8 +250,7 @@ animation: piscar 1s infinite;
     padding-top: 100px;
     justify-content: center;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+    /* flex-direction: column-reverse; */
     align-items: center;
     background-image: url('./assets/aDimencaoEterna.png');
     background-repeat: no-repeat;
@@ -337,6 +336,13 @@ animation: piscar 1s infinite;
     }
 }
 
+@media (max-width: 375px) {  
+    .logo-nome {
+        width: 240px;
+        height: 240px;
+    }
+}
+
 /* ------------ */
 /* lancamento */
 
@@ -347,6 +353,7 @@ animation: piscar 1s infinite;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
 }
 
 .alinhamento-lancamento {
@@ -385,17 +392,51 @@ width: 490px;
 @media (max-width: 700px) {
     .alinhamento-lancamento {
         flex-direction: column;
+        padding: 2rem;
+    }
+    .lancamento {
+        padding: 5px;
     }
 
     .lancamento-img {
-        width: 370px;
+        width: 360px;
         height: 360px;
     }
 
+    .imagem-lancamento-container {
+        margin-right: 0px;
+    }
+    
+    .lancamento-img {
+        width: 360px;
+        height: 600px;
+    }
+    
     .alinhamento-texto {
-        margin-top: 10px;
-        }
+    /* width: 390px; */
+    width: 360px;
+    }
 }
+
+/* @media (max-width: 375px) {  
+    .lancamento-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .imagem-lancamento-container {
+        margin-right: 0px;
+    }
+    
+    .lancamento-img {
+        width: 300px;
+        height: 500px;
+    }
+    
+    .alinhamento-texto {
+    width: 300px;
+    }
+} */
 
 /* ------------ */
 /* trailer */
@@ -424,14 +465,30 @@ width: 490px;
     margin-top: 3rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+    .trailer {
+        margin-bottom: 0rem;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+    }
     .video {
         border: 5px solid #7754A6;
-        width: 400px;
+        width: 360px;
         height: 300px;
     }
-  
-  }
+}
+
+/* @media (max-width: 375px) {  
+    .trailer {
+        margin-bottom: 0rem;
+    }
+    .video {
+        border: 5px solid #7754A6;
+        width: 300px;
+        height: 300px;
+    }
+} */
 
 /* ------------ */
 /* review */
@@ -469,7 +526,7 @@ width: 490px;
     text-align: start;
     align-items: center;
     background-color: #fff;
-    margin-left: 10px;
+    margin: 10px;
     color: #000;
 }
 
@@ -514,6 +571,10 @@ font-weight: 300;
     align-items: center;
 }
 
+.comprar-frase {
+text-align: center;
+}
+
 .alinhamento-comprar {
     align-items: center;
     display: flex;
@@ -550,12 +611,27 @@ font-weight: 300;
 .vertical-line {
     border-left: 1px solid #7754A6; 
     height: 300px; 
-    
 }
 
 @media (max-width: 700px) {
+    .comprar {
+        padding: 5px;
+        margin-top: 6rem;
+    }
+    .vertical-line {
+        border-left: 0px; 
+        height: 0px; 
+    }
     .alinhamento-comprar {
         flex-direction: column;
+    }
+    .centralizar-botao-compra {
+        width: 300px;
+        text-align: center;
+    }
+    .comprar-card {
+        width: 400px;
+        margin-top: 3rem;
     }
 }
 
@@ -622,9 +698,42 @@ font-weight: 300;
     color: #FFFFFF
 }
 
+@media (max-width: 700px) {
+    .autora {
+        padding: 5px;
+    }
+    .imagem-autora {
+         width: 360px;
+    }
+
+    .autora-frase {
+        width: 390px;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+    .alinhamento-rede-individual {
+        margin-right: 0px;
+    }
+    .autora-text-container {
+        width: 360px;
+    }
+   .autora-bio {
+    flex-direction: column;
+    /* align-items: center; */
+    }
+    .titulo-autora-frase {
+        font-size: 17px;
+    }
+    .alinhamento-rede-individual h6{
+        margin-right: 15px;
+     }
+    
+}
+
 
 
 /* ----------------- */
+/* FINAL */
 
 .livro {
     min-height: 100vh;
@@ -652,8 +761,6 @@ font-weight: 300;
 .proximo-livro-alinhamento2 {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: ; */
 }
 
 .proximo-livro-textual {
@@ -676,15 +783,52 @@ font-weight: 300;
 .paragrafo {
     display: block;
     margin-top: 10px;
-    /* margin-bottom: 20px; */
 }
 
 .spacebuttom {
-    /* display: block; */
-    margin-bottom: 2rem; /* Ajuste o valor conforme necessário */
+    margin-bottom: 2rem;
 }
 
 .paragrafo .spacer {
     display: block;
-    height: 15px; /* Ajuste o valor conforme necessário */
+    height: 15px;
+}
+
+@media (max-width: 700px) {  
+    .livro {
+        margin-bottom: 0rem;
+        padding: 5px;
+    }
+    .frase-proximo-livro {
+        margin-bottom: 5rem;
+        padding: 5px;
+    }
+
+    .proximo-livro-alinhamento {
+        flex-direction: column;
+    }
+
+    .proximo-livro-textual {
+        /* width: 390px; */
+        width: 360px;
+        margin-bottom: 4rem;
+    }
+    .proximo-livro-capa {
+        width: 360px;
+    }
+    
+}
+
+@media (max-width: 375px) {  
+    /* .proximo-livro-alinhamento {
+        flex-direction: column;
+    } */
+    /* .proximo-livro-textual {
+        width: 300px;
+        margin-bottom: 4rem;
+    } */
+
+    /* .proximo-livro-capa {
+        width: 270px;
+    }  */
 }
