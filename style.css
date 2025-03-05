@@ -182,7 +182,7 @@ animation: piscar 1s infinite;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #7754A6;
+    background-color: #161616;
     padding: 4rem 0;
     transform: translateY(-100%); 
     transition: .3s ease transform;
