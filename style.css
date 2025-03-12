@@ -570,6 +570,18 @@ font-weight: 300;
 text-align: center;
 }
 
+.alinhamento-compra-botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-compra-botao {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
 .alinhamento-comprar {
     align-items: center;
     display: flex;
